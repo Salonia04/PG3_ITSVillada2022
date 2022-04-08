@@ -1,4 +1,5 @@
 lista = [4,7,10,19,20,77,99,]
+
 print(lista)
 buscar = int(input("Decime un numero para buscar: "))
 
@@ -9,3 +10,4 @@ def funcion(lista, buscar):
         print("Este numero no esta en la lista :'(")
 
 funcion(lista, buscar)
+print("Hola")
