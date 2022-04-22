@@ -1,22 +1,18 @@
 class Operaciones:
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
+    def __init__(self):
+        self.num1 = int(input("Ingrese el primer numero: "))
+        self.num2 = int(input("Ingrese el segundo numero: "))
+        self.suma = self.num1 + self.num2
+        self.resta = self.num1 - self.num2
+        self.multiplicacion = self.num1 * self.num2
+        self.division = self.num1 / self.num2
 
-    def suma(self):
-        return self.num1 + self.num2
+    def mostrar(self):
+        print("La suma es: ", self.suma)
+        print("La resta es: ", self.resta)
+        print("La multiplicacion es: ", self.multiplicacion)
+        print("La division es: ", self.division)
 
-    def resta(self):
-        return self.num1 - self.num2
-
-    def multiplicacion(self):
-        return self.num1 * self.num2
-
-    def division(self):
-        return self.num1 / self.num2
-
-Operaciones = Operaciones(10, 5)
-print("Suma: ",Operaciones.suma())
-print("Resta: ", Operaciones.resta())
-print("Multiplicacion: ", Operaciones.multiplicacion())
-print("Division: ", Operaciones.division())
+Operaciones = Operaciones()
+Operaciones.mostrar()
+        
